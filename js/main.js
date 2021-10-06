@@ -1,1 +1,11 @@
-console.log("hello");
+/* =========== Show Navbar =========== */
+
+/* =========== Scroll Position =========== */
+
+/* =========== Smooth Scroll =========== */
+
+/* =========== Preloader =========== */
+
+/* =========== Scroll Top =========== */
+
+/* =========== Scroll Reveal =========== */
