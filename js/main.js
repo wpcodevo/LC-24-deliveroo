@@ -11,7 +11,7 @@ hamburger.addEventListener("click", () => {
 const header = document.querySelector(".header");
 const scrollLink = document.querySelectorAll(".navbar a:not(:last-child)");
 
-// Smooth Scroll
+/* =========== Smooth Scroll =========== */
 Array.from(scrollLink).map((link) => {
   link.addEventListener("click", (e) => {
     // Prevent Default
