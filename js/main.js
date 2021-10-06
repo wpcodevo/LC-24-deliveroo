@@ -59,3 +59,5 @@ window.addEventListener("scroll", (e) => {
     scrollTop.classList.remove("show");
   }
 });
+
+/* =========== Scroll Reveal =========== */
