@@ -61,3 +61,71 @@ window.addEventListener("scroll", (e) => {
 });
 
 /* =========== Scroll Reveal =========== */
+const scroll = ScrollReveal({
+  distance: "100px",
+  duration: 2500,
+  reset: true,
+});
+
+scroll.reveal(`.home .content h1, .home .content p,.home .content .home-btn`, {
+  origin: "top",
+  interval: 100,
+});
+
+scroll.reveal(`.home .image`, {
+  origin: "right",
+});
+
+scroll.reveal(`.services .top h2, .services .top p`, {
+  origin: "top",
+  interval: 100,
+});
+
+scroll.reveal(`.services .bottom`, {
+  origin: "bottom",
+});
+
+scroll.reveal(`.about .content h3, .about .content p,.about .content .btn`, {
+  origin: "right",
+  interval: 100,
+});
+
+scroll.reveal(`.about .image`, {
+  origin: "top",
+});
+
+scroll.reveal(
+  `.about-2 .content h3, .about-2 .content p,.about-2 .content .btn`,
+  {
+    origin: "top",
+    interval: 100,
+  }
+);
+
+scroll.reveal(`.about-2 .image`, {
+  origin: "right",
+});
+
+scroll.reveal(
+  `.about-3 .content h3, .about-3 .content p,.about-3 .content .btn`,
+  {
+    origin: "bottom",
+    interval: 100,
+  }
+);
+
+scroll.reveal(`.about-3 .image`, {
+  origin: "top",
+});
+
+scroll.reveal(`.app .image`, {
+  origin: "left",
+});
+
+scroll.reveal(`.app .content`, {
+  origin: "right",
+});
+
+scroll.reveal(`.footer`, {
+  origin: "bottom",
+});
