@@ -19,7 +19,6 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  transition: all 0.2s linear;
 }
 
 html {
@@ -63,7 +62,7 @@ section {
   right: 0;
   padding: 1rem 7%;
   height: 8rem;
-  background-color: var(--white);
+  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -134,8 +133,8 @@ section {
     left: 0;
     right: 0;
     width: 90%;
-    margin: 0 auto;
     padding: 2.5rem;
+    margin: 0 auto;
     box-shadow: var(--box-shadow);
     background-color: var(--white);
     text-align: center;
@@ -203,7 +202,6 @@ section {
 @media (max-width: 999px) {
   .home .content h1 {
     font-size: 4rem;
-    margin-bottom: 2rem;
   }
 }
 
@@ -260,7 +258,7 @@ section.services {
 .services .bottom .box {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   padding: 3rem 2rem;
   border-radius: 0.5rem;
 }
@@ -338,9 +336,7 @@ section.about {
 
 @media (max-width: 768px) {
   section.about {
-    display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
     gap: 3rem 0;
   }
 
@@ -357,7 +353,6 @@ section.about {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
-
   .about .content p {
     width: 100%;
     margin-bottom: 2rem;
@@ -365,6 +360,7 @@ section.about {
 }
 
 /* App */
+
 section.app {
   margin: 10rem 9%;
   border-radius: 0.5rem;
@@ -406,13 +402,7 @@ section.app .content .links img {
 
 @media (max-width: 1200px) {
   section.app .image {
-    position: absolute;
-    left: 15%;
     max-width: 20rem;
-  }
-
-  section.app .image img {
-    width: 100%;
   }
 }
 
@@ -440,7 +430,7 @@ section.app .content .links img {
 
   section.app .content .links img {
     width: 8rem;
-    margin-right: 0rem;
+    margin-right: 0;
   }
 }
 
@@ -488,10 +478,14 @@ section.app .content .links img {
   color: var(--grey);
 }
 
+.footer .top .link a {
+  display: block;
+}
+
 .footer .top .link div {
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 .footer .top .link div img {
@@ -536,7 +530,7 @@ section.app .content .links img {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000000;
+  z-index: 10000000;
 }
 
 .preloader img {
@@ -566,7 +560,6 @@ section.app .content .links img {
   0% {
     transform: scale(0.8);
   }
-
   100% {
     transform: scale(1);
   }
